@@ -1,22 +1,26 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : Data Visualization
+description : Storytelling with data
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:1f307d89b6
-## A really bad movie
+## Types of Visualizations
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+(A) The type of graph doesn’t matter. Colors, data, and shape are whatever you find easiest to view. Graphics can be intricate and only viewed on your screen.You can search for insights.
+
+(B) The type of graph needs to be carefully chosen. Selection of data, color, and shape needs to be carefully considered
+Scale needs to be appropriate. Key points need to be identified and made clear to your viewer
+
+We will focus on graphics that you intend to present to Others not for Yourself. Please Select which one is correct 
 
 *** =instructions
-- Adventure
-- Action
-- Animation
-- Comedy
+- A
+- B
+
 
 *** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
+Have a look at the plots. Which color does the point with the lowest rating have?
 
 *** =pre_exercise_code
 ```{r}
@@ -35,8 +39,8 @@ ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
 msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+msg_success  <- "Exactly! The type of graph needs to be carefully chosen!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c14ff29704
