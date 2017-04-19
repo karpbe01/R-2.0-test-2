@@ -4,6 +4,13 @@ description : Storytelling with data
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
+
+--- type:VideoExercise lang:r xp:50 skills:1 key:f02ac98bb1
+##
+
+*** =slides_key
+864776f83d21c367fbc2d1f410956684
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:1f307d89b6
 ## Types of Visualizations
 
@@ -118,3 +125,8 @@ test_error()
 
 success_msg("Good work!")
 ```
+
+--- type:VideoExercise lang:r xp:50 skills:1 key:36736b06ac
+## <<<New Exercise>>> https://drive.google.com/open?id=0B55VPQELPVm6SERHcldaYXoxbWc
+
+
